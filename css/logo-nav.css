@@ -1,0 +1,190 @@
+/*
+ * Start Bootstrap - Logo Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body { 
+	padding-top: 50px; 
+	font-family: 'Open Sans', sans-serif;
+}
+/*
+@media (max-width: 1262px) {
+	    body { padding-top: 110px; }
+}
+
+@media (max-width: 767px) {
+    body { padding-top: 50px; }
+	#MENU.navbar-default .img-replace {background: url(..\\old\gfx\indextitlenew_short.gif)}
+}
+
+@media (max-width: 595px) {
+    body { padding-top: 100px; }
+}*/
+
+@media (max-width: 400px) {
+    .visible-xxs{ display:block; }
+	.hidden-xxs{display:none;}
+}
+
+#MENU.navbar-default .nav {
+    padding: 0px 0;
+}
+
+#MENU.navbar-default .navbar-brand {
+    padding: 0 0px;
+}
+	
+#MENU.navbar-default .navbar-brand {
+    color: black;
+}
+#MENU.navbar-default {
+    font-size: 14px;
+    background-color: #e6e6fa;
+    border-bottom-width: 1px;
+	font-family: 'Open Sans', sans-serif;
+	/*border-color: transparent;*/
+}
+#MENU.navbar-default .navbar-nav>li>a {
+    color: black;
+    background-color:  #e6e6fa;
+}
+#MENU.navbar-default .navbar-nav>li>a:hover,
+#MENU.navbar-default .navbar-nav>li>a:focus {
+    color: black;
+    background-color: #c0c0ea;
+}
+#MENU.navbar-default .navbar-nav>.active>a,
+#MENU.navbar-default .navbar-nav>.active>a:hover,
+#MENU.navbar-default .navbar-nav>.active>a:focus {
+    color: black;
+    background-color: #c0c0ea;
+}
+#MENU.navbar-default .navbar-toggle {
+    border-color: #9b9bf7;
+}
+#MENU.navbar-default .navbar-toggle:hover,
+#MENU.navbar-default .navbar-toggle:focus {
+    background-color: #c0c0ea;
+}
+#MENU.navbar-default .navbar-toggle .icon-bar {
+    background-color: #9b9bf7;
+}
+#MENU.navbar-default .navbar-toggle:hover .icon-bar,
+#MENU.navbar-default .navbar-toggle:focus .icon-bar {
+     border-color:  #c0c0ea;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: black;
+}
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .dropdown-menu > li > a:focus {
+  color: black;
+  background-color: #c0c0ea;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: black;
+  background-color: #c0c0ea;
+}
+
+/*.dropdown:hover .dropdown-menu {
+	display:block;
+}*/
+
+/*.divider {
+	position: relative;
+	border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 30px;
+  margin-top: 30px; }
+}*/
+
+hr {
+	border-top-color : #d5d5d5
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: black;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: black;
+    background-color: #c0c0ea;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: black;
+    background-color: #c0c0ea;
+  }
+  
+  .btn{
+	  white-space:normal;
+  }
+  
+}
+
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img {
+      //max-height: 300px;
+	  width: auto;
+	  height:auto;
+      margin: auto;
+	  overflow: hidden;
+  }
+ 
+
+hr {
+	border-color:black
+}
+
+.btn-primary {
+  color: black;
+  background-color:  #e6e6fa;
+  border-color:  #e6e6fa;
+  white-space: normal;
+  box-shadow:7px 7px 5px rgba(4, 4, 4, 0.3);
+
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: black;
+  background-color:  #e6e6fa;
+  border-color:  #e6e6fa;
+}
+.btn-primary:hover {
+  color: black;
+  background-color: #c0c0ea;
+  border-color: #c0c0ea;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: black;
+  background-color: #e6e6fa;
+  border-color:  #e6e6fa;
+} 
+
+.roww .col-sm-2  .btn{
+		margin-bottom:5px;
+		white-space: normal;
+}
+ /*.carousel {
+	 height:500px
+ }
+*/
+
+
+/*@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. 
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}*/

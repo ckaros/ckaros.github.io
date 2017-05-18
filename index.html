@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="DYNSYSTEM Information" content="">
+    <meta name="Constantine Karos" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MashKaros Wedding</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet"> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div id="MENU" class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container-fluid">
+	        <!--<div class="navbar-header"><a class="navbar-brand" href="#">DYNSYSTEM Integrated Water Resource Modeling Code</a>
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+	            </button>
+	        </div>-->
+	        <div class="navbar-header"><a class="navbar-brand" href="#"><img class = "img-replace" src="olddyn\gfx\indextitlenew.gif" alt=""></a>
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+	            </button>
+	        </div>
+	        <div class="collapse navbar-collapse navbar-menubuilder">
+	            <ul class="nav navbar-nav navbar-left">
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="#">Ceremony</a></li>
+	                <li><a href="#">Reception</a></li>
+	                <li><a href="#">Gallery</a></li>
+					<li><a href="#">The Bide and Groom</a></li>
+	                <li><a href="RSVP.html">RSVP</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+
+  <!-- Page Content -->
+	<div class = "container-fluid">
+		<div class="row">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+				<div class="item active">
+				  <img class="img-responsive center-block"  src="#" alt="Engagement photos">
+				</div>
+
+				<div class="item">
+				  <img class="img-responsive center-block"  src="#" alt="Engagement photos">
+				</div>
+
+				<div class="item">
+				  <img class="img-responsive center-block"  src="#" alt="Engagement photos">
+				</div>
+
+				<div class="item">
+				  <img class="img-responsive center-block" src="#" alt="Engagement photos">
+				</div>
+			  </div>
+
+	  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h1><strong>Wedding of the Ages<strong></h1>
+				<h4>Come bear witness to the union of two lovers who together have forged something grander than anything else...everlasting happiness</h4>
+			</div>
+		</div>
+		<hr>
+		
+		<div class="row roww text-center">
+			<div class="col-sm-2 col-sm-offset-2">
+				<button class="btn btn-primary" onclick="location.href = '#'">How did They Meet?</button>
+			</div>
+			<div class="col-sm-2">
+				<button class="btn btn-primary" onclick="location.href = '#'">What to Expect</button>
+			</div>
+			<div class="col-sm-2">
+				<button class="btn btn-primary" onclick="location.href = '#'">Gallery</button>
+			</div>
+			<div class="col-sm-2">
+				<button class="btn btn-primary" onclick="location.href = '#'">RSVP</button>
+			</div>
+		</div>
+	<br>
+	</div>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+<!--
+<script>
+$(window).on( 'resize', function () {
+    $('.halfwidth').height( $(window).width() / 2 );
+}).resize();
+</script>
+-->
+	
+<script>
+function res() {
+	var imgs = $('.carousel-inner > .item > img');
+	for (i = 0; i < imgs.length; i++) { 
+		var win = $(window).innerHeight() / 3;
+		var rat = imgs[i].width/imgs[i].height;
+		imgs[i].style.height = win + "px";
+		
+		//console.log(win)	
+		var wid = rat * win;
+		//console.log(imgs[i].height);
+		//console.log($(window).innerHeight() / 2 + "px");
+		//console.log(wid)
+		if (wid > window.innerWidth) {
+			//console.log('this');
+			/*var nheight = window.innerWidth/rat;
+			console.log(win)
+			console.log(nheight)
+			imgs[i].style.height = nheight+"px";
+			imgs[i].style.width = window.innerWidth+"px";
+			console.log("smaller")
+			$('.carousel')[0].style.height = nheight	 */
+		} else {
+			imgs[i].style.width = "auto";
+			//imgs[i].style.width = rat  imgs[i].style.height;
+		}
+		}
+	}
+function car() {
+	var imgs = $('.carousel-inner > .item > img');
+	for (i = 0; i < imgs.length; i++) { 
+		//if (i>=0){
+		var rat = imgs[i].height/imgs[i].width
+		var dh = rat * img
+		console.log(rat)
+		//h = $(imgs[i]).height()//}
+		//console.log(h)
+		//console.log(imgs[i].alt)
+		//var nh = imgs[i].style.height;
+		//if (nh>h){h=nh}
+		}
+		
+	//var caro = $('.carousel');
+	//var caro = $('.carousel');
+	//console.log(caro[0]);// = nh;
+	//console.log(nh);
+	}
+res();
+$(window).resize(res);
+</script>
+
+
+
+
+
+<script>
+//max height calc
+function btnres() {
+btnss = $('.btn');
+maxHeight = Math.max.apply(
+  Math, btnss.map(function() {
+    return $(this).height();
+}).get());
+btnss.height(maxHeight);
+}
+//resize height
+function aut(){
+$('.btn').height('auto')
+}
+//resize height
+btnres();
+$(window).resize(aut);
+$(window).resize(btnres);
+
+//max width calc
+function btnress() {
+btnss = $('.btn');
+maxWidth = Math.max.apply(
+  Math, btnss.map(function() {
+    return $(this).width();
+}).get());
+btnss.width(maxWidth);
+}
+//resize width
+function autt(){
+$('.btn').width('auto')
+}
+//resize width
+btnress();
+$(window).resize(autt);
+$(window).resize(btnress);
+
+</script>
+
+</html>

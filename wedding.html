@@ -17,6 +17,7 @@
 	
     <!-- Custom CSS -->
     <link href="css/logo-nav.css" rel="stylesheet">
+    <link href="css/wed.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,10 +44,9 @@
 	        <div class="collapse navbar-collapse navbar-menubuilder">
 	            <ul class="nav navbar-nav navbar-left">
 	                <li><a href="index.html">Home</a></li>
-	                <li><a href="ceremony.html">Ceremony</a></li>
-	                <li><a href="reception.html">Reception</a></li>
-					<li><a href="bridezilla.html">The Bide and Groom</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+	                <li><a href="wedding.html">Our Wedding Day</a></li>
+					<li><a href="bridezilla.html">The Bride and Groom</a></li>
+                    <li><a href="$$$$.html">Registry</a></li>
 	                <li><a href="requests.html">Song Requests</a></li>
 	            </ul>
 	        </div>
@@ -56,14 +56,31 @@
   <!-- Page Content -->
     <div class="container">
         <br>
-        <div class="row">
+        <div class="row well well-lg">
             <div class="col-sm-6 text-center">
-                <img class="img-responsive img-thumbnail" src="http://news.holycross.edu/wp-content/uploads/2013/07/StJosephChapel_RS53878_HC7283-lpr.jpg">
+                <img class="img-responsive img-thumbnail imgg" src="http://news.holycross.edu/wp-content/uploads/2013/07/StJosephChapel_RS53878_HC7283-lpr.jpg">
             </div>
             <div class="col-sm-6 text-center">
-                <h3>The ceremony will take place on October 20, 2018, at the St. Joseph Memorial Chapel at The College of the Holy Cross in Worcester, MA.</h3>
+                <h3>The ceremony will take place on <b><i>October 20, 2018 at 3PM</i></b>, at the St. Joseph Memorial Chapel at The College of the Holy Cross in Worcester, MA.</h3>
+                <hr>
+                <i><h5>College of The Holy Cross</h5>
+                    <h5>1 College Street, Worcester, MA 01610</h5></i>
+                <img class="img-responsive center-block" width=20% src="http://www.holycross.edu/sites/all/themes/holycross/assets/img/holy-crest.png">
             </div>
         </div>
+        <div class="row well well-lg">
+            <div class="col-sm-6 text-center">
+                <h3>The reception will be held at Mechanics Hall on Main Street in Worcester, MA starting at 5pm.</h3>
+                <hr>
+                <i><h5>Mechanics Hall</h5>
+                    <h5>321 Main Street, Worcester, MA 01608</h5></i>
+            </div>
+            <div class="col-sm-6 text-center">
+                <img class="img-responsive img-thumbnail imgg" src="http://www.mechanicshall.org/graphics/frontPhoto900px.jpg">
+
+            </div>
+        </div>
+
     </div>
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -71,5 +88,49 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+
+
+    <script>
+    var modal = document.getElementById('myModal');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    var span = document.getElementsByClassName("close")[0];
+    var off = 0
+    var $imgs = $('.imgg').click(function() {
+        //var a = alert('click')
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        off = ((window.innerWidth - modalImg.width)/2)-50;
+        if (off<0){off=10;}
+        console.log(off);
+        span.style.right = off + "px";
+    })
+
+    window.onresize = function() {
+        off = ((window.innerWidth - modalImg.width)/2)-50;
+        if (off<0){off=10;}
+        span.style.right = off + "px";
+        console.log(off);
+    }
+
+    span.onclick = function() { 
+       //modal.fadeOut()
+       modal.style.display = "none";
+       span.style.right ="0px";
+
+    }
+
+
+
+
+</script>
 </body>
 </html>

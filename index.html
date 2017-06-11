@@ -96,9 +96,12 @@
 		</div>
 		<div class="row text-center">
 			<div class="col-sm-8 col-sm-offset-2">
-				<h1><strong>Wedding of the Ages<strong></h1>
-				<h4>Come bear witness to the union of two lovers who together have forged something grander than anything else...everlasting happiness</h4>
-                <h4>JUST KIDDING.....LET'S PARTY!!!</h4>
+                <h1><strong>Rebecca and Constantine</strong></h1>
+                    <i><h4>...or Becca and Dean</h4></i>
+                    <br>
+                    <br>
+                    <h4>Come bear witness to the union of two lovers who together have forged something grander than anything else...everlasting happiness</h4>
+
 			</div>
 		</div>
 		<hr>
@@ -138,7 +141,7 @@ $(window).on( 'resize', function () {
 function res() {
 	var imgs = $('.carousel-inner > .item > img');
 	for (i = 0; i < imgs.length; i++) { 
-		var win = $(window).innerHeight() / 3;
+		var win = $(window).innerHeight() / 2;
 		var rat = imgs[i].width/imgs[i].height;
 		imgs[i].style.height = win + "px";
 		
@@ -168,7 +171,7 @@ function car() {
 		//if (i>=0){
 		var rat = imgs[i].height/imgs[i].width
 		var dh = rat * img
-		console.log(rat)
+		//console.log(rat)
 		//h = $(imgs[i]).height()//}
 		//console.log(h)
 		//console.log(imgs[i].alt)

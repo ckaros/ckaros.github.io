@@ -62,6 +62,7 @@
 				<li data-target="#myCarousel" data-slide-to="1"></li>
 				<li data-target="#myCarousel" data-slide-to="2"></li>
 				<li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
 			  </ol>
 
 			  <!-- Wrapper for slides -->
@@ -69,7 +70,9 @@
 				<div class="item active">
 				  <img class="img-responsive center-block"  src="gfx/Cape.jpg" alt="Engagement photos">
 				</div>
-
+                <div class="item">
+				  <img class="img-responsive center-block" src="gfx/pict.jpg" alt="Engagement photos">
+				</div>
 				<div class="item">
 				  <img class="img-responsive center-block"  src="gfx/ChurchKiss.jpg" alt="Engagement photos">
 				</div>
@@ -94,13 +97,17 @@
 			  </a>
 			</div>
 		</div>
-		<div class="row text-center">
+		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
                 <h1><strong>Rebecca and Constantine</strong></h1>
                     <i><h4>...or Becca and Dean</h4></i>
                     <br>
-                    <br>
-                    <h4>Come bear witness to the union of two lovers who together have forged something grander than anything else...everlasting happiness</h4>
+                <h4>Our story began on the third floor of 31 Caro St, Dean's senior off-campus college apartment. It was Christmas time, which means plenty of mistletoe to go around, but Dean had his eyes set on one present, in the form of Becca. Through the stressful months of senior year spring and navigating life-after-college, one thing was certain, we would be together. </h4>
+                        
+                <h4> Fast forward four years and Dean proposed to Becca during a game of pictionary. Dean being the spontaneous, thrill-seeking specimen he is, picked out, purchased, and proposed all in the same day, with no real plan when he walked into Becca's house with the new ring in his pocket. If you know anything about Becca and her family, it's that they don't mess around when it comes to gaming, the competitive drive is vivacious. It's the last play of the game, our team is going to win if Dean draws outer space and we guess it before the other team, instead Dean goes for the life-win and draws proposal/marriage and turns around with the ring. Becca, in her full competetive pictionary mode, doesn't realize she hadn't won the game with the correct guess of "MATRIMONY" like she thought, until Dean was kneeling in front of her with that beautiful new ring! </h4>
+                
+                <h4>It was perfect! No plan needed! Sharing the exciting moment with family present made it extra special! And now we can't wait to share our special day with all of you!<h4>
+                   <!-- <h4>Come bear witness to the union of two lovers who together have forged something grander than anything else...everlasting happiness</h4> -->
 
 			</div>
 		</div>
@@ -141,7 +148,7 @@ $(window).on( 'resize', function () {
 function res() {
 	var imgs = $('.carousel-inner > .item > img');
 	for (i = 0; i < imgs.length; i++) { 
-		var win = $(window).innerHeight() / 2;
+		var win = $(window).innerHeight() / 2.5;
 		var rat = imgs[i].width/imgs[i].height;
 		imgs[i].style.height = win + "px";
 		

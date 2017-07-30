@@ -4,10 +4,29 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body { 
+ 
+@font-face {
+    font-family: 'plates_napery_personal_useRg';
+    src: url('platesnapery_personaluse-webfont.woff2') format('woff2'),
+         url('platesnapery_personaluse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+ body { 
 	padding-top: 50px; 
 	font-family: 'Open Sans', sans-serif;
 }
+
+
+  
+.fanc{
+ font-family: 'plates_napery_personal_useRg';
+}
+
+
 .navbar-header a {
 	font-size: 18pt;
     line-height:45px;

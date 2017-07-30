@@ -129,7 +129,15 @@ hr {
 	border-top-color : #d5d5d5
 }
 
+.bigs{
+	  font-size:62pt
+  }
+
 @media (max-width: 768px) {
+
+  .bigs{
+	  font-size:42pt
+  }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: black;
   }

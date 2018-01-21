@@ -23,23 +23,33 @@
 
 <body>
   <!-- Nav-Bar -->
-	<div id="MENU" class="navbar navbar-default navbar-fixed-top" role="navigation">
-	    <div class="container-fluid">
-	        <div class="navbar-header"><a class="navbar-brand" href="index.html"><p>Mash-Karos</p></a>
-	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-	            </button>
-	        </div>
-	        <div class="collapse navbar-collapse navbar-menubuilder">
-	            <ul class="nav navbar-nav navbar-left">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="wedding.html">Our Wedding Day</a></li>
-                    <li><a href="freshlygroomed.html">The Bride and Groom</a></li>
-                    <li><a href="registry.html">Registry</a></li>
-                    <li><a href="requests.html">Song Requests</a></li>
-	            </ul>
-	        </div>
-	    </div>
-	</div>
+
+  <div id="MENU" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+          <div class="navbar-header"><a class="navbar-brand" href="index.html"></a>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-menubuilder">
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+          		  <li class="dropdown">
+               	     <a id="WED" href="wedding.html">Wedding Weekend
+                  		<span class="caret"></span> </a> 
+                    <ul class="dropdown-menu">
+                      <li><a href="wedding.html">Our Wedding</a></li>
+                      <li><a href="wedding.html#directions">More Details</a></li>
+                    </ul>
+           		  </li>
+
+             	<li><a href="freshlygroomed.html">The Bride and Groom</a></li>
+             	<li><a href="registry.html">Registry</a></li>
+             	<li><a href="requests.html">Song Requests</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
 
   <!-- Page Content -->
 	<div class = "container-fluid">
@@ -86,18 +96,20 @@
 			  </a>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="countdown" style="display:none">
 			<div class="col-sm-8 col-sm-offset-2">
                 <div class="text-center">
-                  <p class="fanc bigs">We can't wait to celebrate with you in</p>
-					<strong><p style="font-size:48pt", id="demo"></p></strong>
-					<p class="fanc bigs">Love, Becca and Dean</p>
+                  <h3><strong>We cannot wait to celebrate with you in</strong></h3>
+					<strong><p style="font-size:42pt", id="demo"></p></strong>
+					<p style="font-size:20pt; margin: 0 0 0px" class="fanc">with love, &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p> 
+					<p style="font-size:24px"> <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Becca and Dean</strong></p>
 
 				</div>
 			</div>
 		</div>
-		<hr>
-		
+	
+
+		<!--
 		<div class="row roww text-center">
 			<div class="col-sm-2 col-sm-offset-2">
                 <a href="wedding.html"><button class="btn btn-primary">Our Wedding Day</button></a>
@@ -112,6 +124,7 @@
                 <a href="requests.html"><button class="btn btn-primary">The Song Requests</button></a>
 			</div>
 		</div>
+	-->
 	<br>
 	</div>
   <!-- jQuery -->
@@ -148,7 +161,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + " days!"; /*+ hours + "h "
+  document.getElementById("demo").innerHTML = days + "  days"; /*+ hours + "h "
   + minutes + "m " + seconds + "s ";*/
 
   // If the count down is finished, write some text
@@ -157,7 +170,10 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
 </script>
+
+
 	
 <script>
 function res() {
@@ -210,47 +226,16 @@ res();
 $(window).resize(res);
 </script>
 
-
-
-
-
 <script>
-//max height calc
-function btnres() {
-btnss = $('.btn');
-maxHeight = Math.max.apply(
-  Math, btnss.map(function() {
-    return $(this).height();
-}).get());
-btnss.height(maxHeight);
-}
-//resize height
-function aut(){
-$('.btn').height('auto')
-}
-//resize height
-btnres();
-$(window).resize(aut);
-$(window).resize(btnres);
 
-//max width calc
-function btnress() {
-btnss = $('.btn');
-maxWidth = Math.max.apply(
-  Math, btnss.map(function() {
-    return $(this).width();
-}).get());
-btnss.width(maxWidth);
-}
-//resize width
-function autt(){
-$('.btn').width('auto')
-}
-//resize width
-btnress();
-$(window).resize(autt);
-$(window).resize(btnress);
 
+function show(){
+//document.getElementById("countdown").style.display = "block";
+};
+
+setTimeout(function (){
+	document.getElementById("countdown").style.display = "block";
+},1000);
 </script>
 
 <script>

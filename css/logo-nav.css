@@ -34,7 +34,7 @@ OLD FANCY FONT
     line-height:45px;
     font-family: 'Pacifico', cursive;
 }*/
-@import url('https://fonts.googleapis.com/css?family=Oswald:200');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400');
 
 @font-face {
     font-family: 'Shorelines Script Bold';
@@ -220,6 +220,16 @@ hr {
   
 }
 
+.show-md{display:block}
+.heads{font-size:20pt}
+.luna{font-size: 12pt}
+
+@media (min-width: 992px){
+    .show-md {display: none;}
+    .bigs{font-size: 26pt;}
+    .heads{font-size:24pt;}
+    .luna{font-size: 16pt;}
+}
 
 .carousel-inner > .item > img, 
 .carousel-inner > .item > a > img {
